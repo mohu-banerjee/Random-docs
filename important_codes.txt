@@ -1,0 +1,8 @@
+
+
+  const redirectedToBlockedPage = await context.evaluate(function () {
+    return Boolean(document.querySelector('img[src*=ErrorStates]'));
+  });
+  if (redirectedToBlockedPage) {
+    await context.reportBlocked();
+  }
