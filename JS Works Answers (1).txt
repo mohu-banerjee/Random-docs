@@ -1,0 +1,92 @@
+// 1
+// var x = 2; var y = "2";
+// console.log(x == y);  
+// console.log(x === y);
+
+
+// 2
+// VAR is FUNCTION scoped while LET is BLOCK scoped
+// function greet() {
+//     var a = 'hello'; console.log(a);
+//     let b = 'world';
+
+//     if(b == 'world'){
+//       let c = 'JS';
+//       console.log(c);
+//     }
+//     console.log(c);
+// }
+// greet();
+
+
+// 3
+// var x = 3; var y = "3";
+// console.log(x + y); 
+
+
+// 4
+// console.log(isNaN("Hello"));
+// console.log(isNaN(345));
+// console.log(isNaN(true));
+// console.log(isNaN(undefined));
+
+
+// 5
+// Traditional
+// var add = function(a,b){
+//   console.log(a + b);
+// }
+// add(4,6);
+
+// Arrow Function Expression
+// var arrowAdd = (a,b) => console.log(a + b);
+// arrowAdd(7,8);
+
+
+//6
+// const data = [
+//   {firstname : "Malcom", lastname: "Reynolds"},
+//   {firstname : "Kaylee", lastname: "Frye"},
+//   {firstname : "Jayne", lastname: "Cobb"}
+// ];
+
+// var newData = data.map(o => o.firstname+"--"+o.lastname);
+// console.log(newData);
+
+
+//7
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const result = numbers.filter(number => number > 5);
+// console.log(result);
+
+
+//8
+//EXAMPLE - HIGH LEVEL CALCULATIONS
+// var arr=[2,3,1,5];  
+// var a=arr.reduce(function (accumulator,currentValue) {  
+//     return accumulator+currentValue;  
+//     },0);  
+// console.log(a); 
+
+
+
+//9
+//EXAMPLE - DROPDOWN VALUES
+// let students = [
+//         { id: "002", name: "Smriti", sports: "Basketball" },
+//         { id: "004", name: "Bakul", sports: "Basketball" },
+//         { id: "005", name: "Nikita", sports: "Hockey" }
+// ]
+// let basketballPlayers = students.filter(function (student) {
+//     return student.sports === "Basketball";
+// }).map(function (student) {
+//     return student.name;
+// })
+// console.log(basketballPlayers);
+
+
+
+//10
+// Once vs Infinite
+// setTimeout(function() { alert('Hello');}, 2000);
+// setInterval(function() { alert('Hello');}, 2000);
